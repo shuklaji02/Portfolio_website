@@ -1,3 +1,3 @@
 ## Portfolio Website
-<br>
-**To view page**  [Click here](https://shuklaji02.github.io/payform/)
+
+[Click here](https://shuklaji02.github.io/Portfolio_website/) **to have a look on the page**
