@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,10 +23,17 @@
 </head>
 
 <body>
+    <!-- Splash Screen -->
+    <div class="preload">
+        <div class="splashConstent">
+            <h1 class="splashInitial">BS</h1>
+            <h2 class="splashName">Bhaskar Shukla</h2>
+        </div>
+    </div>
     <!-- Nav bar -->
 
     <div id="Home" class="active_box">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse">
             <div class="container-fluid navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -31,15 +42,15 @@
                         <span class="icon-bar"></span>
                     </button>
                     <span class="navbar-brand">
-                        <figure class="t_figure"><img class="t_image" src="images/user.jpeg" alt=""></figure>
+                        <figure class="t_figure adminImg"><img class="t_image" src="images/user.jpeg" alt=""></figure>
                     </span>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Education">Education</a></li>
-                        <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                    <ul class="nav navbar-nav navLink">
+                        <li class="active navItem"><a href="#Home">Home</a></li>
+                        <li class="navItem"><a href="#Education">Education</a></li>
+                        <li class="navItem"><a href="#Projects">Projects</a></li>
+                        <li class="navItem"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +58,7 @@
     </div>
     <!-- Intro -->
 
-    <div class="container brief sec_change" style="padding-top: 30px;">
+    <div class="container brief sec_change">
         <div class="col-lg-8 intro">
             <span>WELCOME TO MY WORLD</span>
             <h1 class="title">Hi, I'm
@@ -103,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 pic"><img src="images/profile.png" alt=""></div><!-- large photo -->
+        <div class="col-md-4 pic adminImg"><img src="images/profile.png" alt=""></div><!-- large photo -->
 
     </div>
 
@@ -267,6 +278,23 @@
             <div class="foot_text">&copy; 2022 | Bhaskar Shukla</div>
         </nav>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).on("click", ".navLink .navItem", function () {
+            $(this).addClass("active").siblings().removeClass("active")
+        })
+        setTimeout(function () {
+            $(".preload").remove();
+        }, 2000);
+
+        $(window).ready(function () {
+            setInterval(function () {
+                $('.navbar-inverse').addClass("navbar-fixed-top")
+            }, 2001);
+
+        });
+    </script>
 </body>
 
 </html>
