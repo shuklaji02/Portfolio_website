@@ -13,6 +13,8 @@
   justify-content: center;
   font-family: "Qwitcher Grypen", cursive;
   transition: opacity 1s;
+  position: fixed;
+  top: 0;
 }
 .splashInitial {
   font-size: 8rem;
