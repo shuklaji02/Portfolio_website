@@ -67,6 +67,7 @@ html {
 }
 
 body {
+  word-wrap: break-word;
   color: aliceblue;
   background-color: #212428;
 }
@@ -269,10 +270,6 @@ h1 {
   margin: 10px;
 }
 
-.projects .proj_box {
-  margin: 20px;
-}
-
 .work {
   margin: var(--primary-child-margin);
   padding: 20px;
@@ -397,7 +394,7 @@ form div {
   font-family: var(--primary-font);
 }
 
-/* Media Queries */ 
+/* Media Queries */
 @media (max-width: 920px) {
   body {
     text-align: center;
