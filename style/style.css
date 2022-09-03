@@ -1,5 +1,28 @@
 /* add media queries */
 
+/* Preload */
+
+.preload {
+  z-index: 100;
+  background-image: linear-gradient(to right, #000, #2d3436);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Qwitcher Grypen", cursive;
+  transition: opacity 1s;
+}
+.splashInitial {
+  font-size: 8rem;
+  letter-spacing: 7px;
+}
+.splashName {
+  letter-spacing: 5px;
+  font-size: 4rem;
+  margin: 0;
+}
 /* General */
 :root {
   --box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -14,6 +37,9 @@
   --secondary-bg-color: linear-gradient(145deg, #1e2024, #23272b);
 }
 
+.adminImg {
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -42,6 +68,8 @@ h1 {
   margin: 0px;
 }
 
+.active {
+}
 /* Page */
 
 .navigation {
