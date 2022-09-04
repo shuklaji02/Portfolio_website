@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8fbd9cad7a.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">  
+    <!-- JQuery -->
 
 </head>
 
@@ -278,23 +279,6 @@
             <div class="foot_text">&copy; 2022 | Bhaskar Shukla</div>
         </nav>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script>
-        $(document).on("click", ".navLink .navItem", function () {
-            $(this).addClass("active").siblings().removeClass("active")
-        })
-        setTimeout(function () {
-            $(".preload").remove();
-        }, 3000);
-
-        $(window).ready(function () {
-            setInterval(function () {
-                $('.navbar-inverse').addClass("navbar-fixed-top")
-            }, 3001);
-
-        });
-    </script>
 </body>
 
 </html>
