@@ -54,6 +54,31 @@
   overflow: hidden;
 }
 
+/* Scroll to top */
+
+.hide {
+  opacity: 0;
+}
+
+#btnScrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgb(33, 33, 59);
+  color: rgb(12, 168, 168);
+  border: none;
+  font-size: xx-large;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#btnScrollToTop:active {
+  background-color: rgb(0, 0, 255);
+}
+
 /* General */
 :root {
   --box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
