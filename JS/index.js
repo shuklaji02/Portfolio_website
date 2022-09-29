@@ -13,3 +13,20 @@ $(window).ready(function () {
     $(".navbar-inverse").addClass("navbar-fixed-top");
   }, 3001);
 });
+
+// Scroll to top
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function () {
+  $("html,body").animate({ scrollTop: 0 });
+});
+
+$(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 400) {
+      $("#btnScrollToTop").removeClass("hide");
+    } else {
+      $("#btnScrollToTop").addClass("hide");
+    }
+  });
+});
