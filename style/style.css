@@ -399,8 +399,7 @@ form div {
   background: inherit;
 }
 .contact_submit:hover {
-  box-shadow: 10px 10px 19px #303f5d, -10px -10px 19px #303f5d,
-    10px 10px 19px #303f5d, -10px -10px 19px #303f5d;
+  box-shadow: 10px 10px 19px #00000072;
   transition: 1s;
   border-radius: 50%;
   background-color: #1e2024;
